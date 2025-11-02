@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:padding="15dp">
+
+    <!-- Tombol silang di pojok kanan atas -->
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_close"
+        android:contentDescription="Tutup"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+       />
+
+    <!-- Isi dialog dibungkus dalam ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"> <!-- Agar isi tidak tertutup tombol -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/text_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎤 Anda berkata:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0671B7"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_input_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="16dp" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧠 Jawaban:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0671B7"
+                android:paddingBottom="8dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_output_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:paddingBottom="16dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

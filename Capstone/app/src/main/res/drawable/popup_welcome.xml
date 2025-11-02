@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/popup_background">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎙️ Ngobrol Seru Bareng Bot IT!"
+        android:textAlignment="center"
+        android:textColor="#4A148C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ucapkan 'Hello' untuk mulai ngobrol dan bsama Bot pintar IT! 🤖\n\n"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktifkan fitur suara 🎤 untuk bertanya tentang:\n• Dunia IT\n• Coding\n• Aplikasi\n• dan masih banyak lagi!"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtCloseHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Klik di mana saja untuk menutup pop-up ini)"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textStyle="italic"/>
+
+</LinearLayout>

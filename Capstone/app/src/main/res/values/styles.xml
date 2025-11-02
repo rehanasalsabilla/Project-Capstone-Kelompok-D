@@ -1,0 +1,15 @@
+<resources>
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@drawable/rounded_dialog</item> <!-- Set background rounded -->
+        <item name="android:windowNoTitle">true</item> <!-- Menghilangkan title -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- Menjadikan background transparan -->
+        <item name="android:windowContentOverlay">@null</item> <!-- Menghilangkan shadow -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- Style untuk sudut gambar melengkung -->
+    <style name="RoundedImageStyle" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+</resources>

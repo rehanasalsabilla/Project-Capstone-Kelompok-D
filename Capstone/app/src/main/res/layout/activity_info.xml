@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8E7F5">
+
+    <!-- Gunakan NestedScrollView agar konten bisa scroll keseluruhan -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Gambar Landing Info + Tombol Back -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/landinginfo"
+                    android:scaleType="fitXY" />
+
+                <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="top|start"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Kembali"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back_ccerah" />
+            </FrameLayout>
+
+            <!-- Grid Menu: Menampilkan tombol-tombol fitur -->
+            <GridLayout
+                android:id="@+id/menuGrid"
+                android:columnCount="4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="24dp">
+
+                <!-- Tombol Program Studi -->
+                <ImageButton
+                    android:id="@+id/btnProgramStudi"
+                    android:src="@drawable/programstudi"
+                    android:contentDescription="Program Studi"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+
+                <!-- Tombol Peraturan Akademik -->
+                <ImageButton
+                    android:id="@+id/btnPeraturanAkademik"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:contentDescription="Peraturan Akademik"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/peraturanakademik" />
+
+                <!-- Tombol Kalender Akademik -->
+                <ImageButton
+                    android:id="@+id/btnKalenderAkademik"
+                    android:src="@drawable/kalenderakademik"
+                    android:contentDescription="Kalender Akademik"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+
+                <!-- Tombol Pendaftaran -->
+                <ImageButton
+                    android:id="@+id/btnPendaftaran"
+                    android:src="@drawable/pendaftaran"
+                    android:contentDescription="Pendaftaran"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+
+                <!-- Tombol Akreditasi -->
+                <ImageButton
+                    android:id="@+id/btnAkreditasi"
+                    android:src="@drawable/akreditasi"
+                    android:contentDescription="Akreditasi"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+
+                <!-- Tombol Prospek Karir -->
+                <ImageButton
+                    android:id="@+id/btnProspekKarir"
+                    android:src="@drawable/prospekkarir"
+                    android:contentDescription="Prospek Karir"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+
+                <!-- Tombol Perkuliahan -->
+                <ImageButton
+                    android:id="@+id/btnPerkuliahan"
+                    android:src="@drawable/perkuliahan"
+                    android:contentDescription="Perkuliahan"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+
+                <!-- Tombol Organisasi -->
+                <ImageButton
+                    android:id="@+id/btnOrganisasi"
+                    android:src="@drawable/organisasi"
+                    android:contentDescription="Organisasi"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp" />
+            </GridLayout>
+
+            <!-- Tempat untuk menampilkan Fragment yang dipilih -->
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

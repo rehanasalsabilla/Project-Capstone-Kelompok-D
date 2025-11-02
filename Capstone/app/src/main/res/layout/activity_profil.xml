@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C8E7F5">
+
+        <!-- Gambar Landing + Tombol Back ditumpuk -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <!-- Gambar landingprofil -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/landingprofil"
+                android:scaleType="fitXY" />
+
+            <!-- Tombol Back -->
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="89dp"
+                android:layout_height="67dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="24dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Kembali"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back" />
+        </FrameLayout>
+
+        <!-- VIDEO PROFILE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:background="#004AAD"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginHorizontal="32dp"
+                app:use_controller="true"
+                app:resize_mode="fit" />
+        </LinearLayout>
+
+        <!-- MENU BUTTON -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menuLayout"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnSejarah"
+                android:src="@drawable/sejarah"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/btnVisiMisi"
+                android:src="@drawable/visimisi"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/btnDosen"
+                android:src="@drawable/dosen"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <ImageButton
+                android:id="@+id/btnFasilitas"
+                android:src="@drawable/fasilitas"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:background="?android:attr/selectableItemBackground" />
+        </LinearLayout>
+
+        <!-- Fragment Container -->
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_marginTop="-28dp"
+            android:layout_marginBottom="24dp" />
+
+
+    </LinearLayout>
+</ScrollView>

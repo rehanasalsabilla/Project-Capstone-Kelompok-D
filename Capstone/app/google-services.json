@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "889104791566",
+    "firebase_url": "https://it-welcome-robot-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "it-welcome-robot",
+    "storage_bucket": "it-welcome-robot.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889104791566:android:364e3ff273d45b876b245f",
+        "android_client_info": {
+          "package_name": "com.example.MyApplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQe9bPS6l2mxt8-WOYssclu8S2d1-bEN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889104791566:android:e53972093e65db296b245f",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQe9bPS6l2mxt8-WOYssclu8S2d1-bEN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889104791566:android:c1f125808bd8e2c66b245f",
+        "android_client_info": {
+          "package_name": "com.sproj.arimagerecognizer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQe9bPS6l2mxt8-WOYssclu8S2d1-bEN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

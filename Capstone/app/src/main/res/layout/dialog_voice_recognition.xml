@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/voicePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎤 Silakan berbicara 🎤"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0671B7"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:background="@drawable/info_card_background"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_info"
+                app:tint="#0671B7"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Perintah yang didukung:\n• Navigasi\n• Informasi: identitas, visi - misi, kontak\n• Sistem: waktu sekarang, kembali"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/info_card_background"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_lock_power_off"
+                app:tint="#FF5722"
+            android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/exitInfoText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="4dp"
+                android:text="Ucapkan exit untuk menutup dialog suara."
+                android:textColor="#FFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

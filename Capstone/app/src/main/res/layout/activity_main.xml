@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/bgJalan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageButton
+            android:id="@+id/btnKarakter"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:contentDescription="Karakter"
+            android:src="@drawable/pilihchar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnProfil"
+            android:layout_width="142dp"
+            android:layout_height="201dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Profil"
+            app:layout_constraintBottom_toTopOf="@id/guideline_top50"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical50"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintHorizontal_bias="0.275"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.922"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <ImageButton
+            android:id="@+id/btnGaleri"
+            android:layout_width="127dp"
+            android:layout_height="219dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Galeri"
+            app:layout_constraintBottom_toTopOf="@id/guideline_top50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical50"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <ImageButton
+            android:id="@+id/btnPrestasi"
+            android:layout_width="163dp"
+            android:layout_height="246dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Prestasi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical50"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintHorizontal_bias="0.838"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_top50"
+            app:layout_constraintVertical_bias="0.072"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="156dp"
+            android:layout_height="241dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintHorizontal_bias="0.667"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical50"
+            app:layout_constraintTop_toBottomOf="@id/guideline_top50"
+            app:layout_constraintVertical_bias="0.128"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <ImageView
+            android:id="@+id/imageViewKarakter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            android:src="@drawable/char1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings"
+            android:scaleType="centerCrop"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
